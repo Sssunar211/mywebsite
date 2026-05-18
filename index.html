@@ -1,70 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Cloud Website</title>
 
-    <style>
-        body{
-            margin:0;
-            font-family: Arial;
-            text-align:center;
-            background-image:url('background.jpg');
-            background-size:cover;
-            background-position:center;
-        }
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
 
-        .overlay{
-            background:rgba(255,255,255,0.6);
-            min-height:100vh;
-            padding-top:40px;
-        }
+    body{
+      background: url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1600&auto=format&fit=crop') no-repeat center center fixed;
+      background-size: cover;
+      padding: 40px;
+    }
 
-        h1{
-            color:darkblue;
-            font-size:45px;
-        }
+    .section{
+      background: rgba(255,255,255,0.85);
+      border-radius: 20px;
+      padding: 50px;
+      margin: 40px auto;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
 
-        nav a{
-            margin:15px;
-            text-decoration:none;
-            color:black;
-            font-weight:bold;
-        }
+    h1{
+      color: darkblue;
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
 
-        .box{
-            margin:auto;
-            margin-top:30px;
-            width:300px;
-            background:white;
-            padding:20px;
-            border-radius:10px;
-        }
+    nav{
+      margin-bottom: 25px;
+    }
 
-        img{
-            width:120px;
-        }
-    </style>
+    nav a{
+      text-decoration: none;
+      color: black;
+      font-size: 28px;
+      margin: 0 25px;
+      font-weight: bold;
+    }
+
+    p{
+      font-size: 30px;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .profile-img{
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 30px 0;
+      border: 5px solid white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .logo{
+      width: 180px;
+      margin-top: 30px;
+    }
+
+    @media(max-width:768px){
+
+      body{
+        padding:20px;
+      }
+
+      .section{
+        padding:30px 20px;
+      }
+
+      h1{
+        font-size:36px;
+      }
+
+      nav a{
+        display:block;
+        margin:10px 0;
+        font-size:24px;
+      }
+
+      p{
+        font-size:22px;
+      }
+
+      .profile-img{
+        width:160px;
+        height:160px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="overlay">
-
+  <!-- HOME SECTION -->
+  <div class="section" id="home">
     <h1>Welcome to My Cloud Website</h1>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
 
     <p>This website is hosted on GitHub cloud platform.</p>
 
-    <div class="box">
-        <img src="kdu.png" alt="KDU Logo">
-    </div>
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/9/91/Kyungdong_University_logo.png" 
+      class="logo"
+      alt="University Logo"
+    >
+  </div>
 
-</div>
+
+  <!-- ABOUT SECTION -->
+  <div class="section" id="about">
+
+    <h1>About Me</h1>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <img 
+      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop"
+      class="profile-img"
+      alt="Profile Photo"
+    >
+
+    <p><strong>Baniya Gayatri</strong></p>
+    <p>Student ID: 2317413</p>
+    <p>I created this website using HTML, CSS, GitHub and GitHub Pages.</p>
+
+  </div>
+
+
+  <!-- CONTACT SECTION -->
+  <div class="section" id="contact">
+
+    <h1>Contact Me</h1>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <p>Email: gayatribaniya12@gmail.com</p>
+    <p>Phone: 010-82505095</p>
+    <p>University: Kyungdong University</p>
+
+  </div>
 
 </body>
 </html>
