@@ -1,20 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Cloud Website</title>
-<link rel="stylesheet" href="style.css">
+    <title>Home</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial;
+            text-align:center;
+            background-image:url('background.jpg');
+            background-size:cover;
+            background-position:center;
+        }
+
+        .overlay{
+            background:rgba(255,255,255,0.6);
+            min-height:100vh;
+            padding-top:40px;
+        }
+
+        h1{
+            color:darkblue;
+            font-size:45px;
+        }
+
+        nav a{
+            margin:15px;
+            text-decoration:none;
+            color:black;
+            font-weight:bold;
+        }
+
+        .box{
+            margin:auto;
+            margin-top:30px;
+            width:300px;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+        }
+
+        img{
+            width:120px;
+        }
+    </style>
 </head>
 
 <body>
 
-<h1>Welcome to My Cloud Website</h1>
+<div class="overlay">
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</nav>
+    <h1>Welcome to My Cloud Website</h1>
 
-<p>This website is hosted on GitHub cloud platform.</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <p>This website is hosted on GitHub cloud platform.</p>
+
+    <div class="box">
+        <img src="kdu.png" alt="KDU Logo">
+    </div>
+
+</div>
+
 </body>
 </html>
